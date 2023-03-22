@@ -45,14 +45,6 @@ class Card: CustomStringConvertible {
         self.number = number
     }
     
-    static func getAllShape() -> [Shape] {
-        return Shape.allCases
-    }
-    
-    static func getAllNumber() -> [Number] {
-        return Number.allCases
-    }
-    
     var description: String {
         return "\(shape)\(number)"
     }

@@ -13,8 +13,8 @@ class CardDeck {
     private var tempDeck: [Card] = []
     
     init() {
-        let allShape = Card.getAllShape()
-        let allNumber = Card.getAllNumber()
+        let allShape: [Card.Shape] = Card.Shape.allCases
+        let allNumber: [Card.Number] = Card.Number.allCases
         
         for cardShape in allShape {
             for cardNumber in allNumber {
@@ -55,8 +55,8 @@ func testCardDeck() {
     var result = ""
     let cardDeck:CardDeck = CardDeck()
     
-    let cardShapeCount = Card.getAllShape().count
-    let cardNumberCount = Card.getAllNumber().count
+    let cardShapeCount: Int = Card.Shape.allCases.count
+    let cardNumberCount: Int = Card.Number.allCases.count
     let nowCardCount = cardDeck.count()
     
     if cardShapeCount*cardNumberCount != nowCardCount {
