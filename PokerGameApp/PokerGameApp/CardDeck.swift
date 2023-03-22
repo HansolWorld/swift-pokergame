@@ -44,10 +44,14 @@ class CardDeck {
         }
     }
     
-    func removeOne() -> Card {
-        let tempCard:Card = self.deck.popLast()!
-        self.tempDeck.append(tempCard)
-        return tempCard
+    func removeOne() -> Card? {
+        if let tempCard:Card = self.deck.popLast() {
+            self.tempDeck.append(tempCard)
+            return tempCard
+        } else {
+            return nil
+        }
+
     }
     
     func reset() {
