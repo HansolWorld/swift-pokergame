@@ -13,6 +13,9 @@ class CardDeck {
     private var tempDeck: [Card] = []
     
     init() {
+        ///  CardDeck 객체를 만들때만 일정하게 카드리스트를 만든다.
+        ///  게임이 시작된 이후에는 카드를 재정렬 하는 함수는 존재하지 않는다.
+        ///  카드를 재정렬하고 싶다면 새로운 CardDeck을 만들어야 한다.
         let allShape: [Card.Shape] = Card.Shape.allCases
         let allNumber: [Card.Number] = Card.Number.allCases
         
@@ -33,8 +36,10 @@ class CardDeck {
         /// 배열의 index를 순차적으로 진행한다(i).
         /// i 이후부터 배열의 길이값까지 중 랜덤값을 뽑는다(swapIndex).
         /// i와 swapIndex의 값을 바꾼다.
-        for i in 0..<self.count() {
-            let swapIndex:Int = Int.random(in: i..<self.count())
+        let deckCount = self.deck.count
+        
+        for i in 0..<deckCount {
+            let swapIndex:Int = Int.random(in: i..<deckCount)
             self.deck.swapAt(i, swapIndex)
         }
     }

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FF14237B29CADBBF00C2F240 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF14237A29CADBBF00C2F240 /* User.swift */; };
 		FFA5F58429C2ECFF0054B2DE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5F58329C2ECFF0054B2DE /* AppDelegate.swift */; };
 		FFA5F58629C2ECFF0054B2DE /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5F58529C2ECFF0054B2DE /* SceneDelegate.swift */; };
 		FFA5F58829C2ECFF0054B2DE /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFA5F58729C2ECFF0054B2DE /* ViewController.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FF14237A29CADBBF00C2F240 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		FFA5F58029C2ECFF0054B2DE /* PokerGameApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PokerGameApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FFA5F58329C2ECFF0054B2DE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FFA5F58529C2ECFF0054B2DE /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -99,6 +101,7 @@
 				FFA5F58529C2ECFF0054B2DE /* SceneDelegate.swift */,
 				FFA5F58729C2ECFF0054B2DE /* ViewController.swift */,
 				FFA5F5B529C311040054B2DE /* Card.swift */,
+				FF14237A29CADBBF00C2F240 /* User.swift */,
 				FFA5F5B729C86FF70054B2DE /* CardDeck.swift */,
 				FFA5F58929C2ECFF0054B2DE /* Main.storyboard */,
 				FFA5F58C29C2ED000054B2DE /* Assets.xcassets */,
@@ -241,6 +244,7 @@
 			files = (
 				FFA5F58829C2ECFF0054B2DE /* ViewController.swift in Sources */,
 				FFA5F5B829C86FF70054B2DE /* CardDeck.swift in Sources */,
+				FF14237B29CADBBF00C2F240 /* User.swift in Sources */,
 				FFA5F58429C2ECFF0054B2DE /* AppDelegate.swift in Sources */,
 				FFA5F58629C2ECFF0054B2DE /* SceneDelegate.swift in Sources */,
 				FFA5F5B629C311040054B2DE /* Card.swift in Sources */,
